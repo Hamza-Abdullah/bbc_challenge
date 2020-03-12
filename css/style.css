@@ -1,7 +1,7 @@
 /* Set variables for colours */
 :root {
     --dark-color: #111;
-    --light-color: #eee;
+    --light-color: #e7e7e7;
     --dark-grey: #404040;
     --medium-grey: #808080;
     --light-gray: #c0c0c0;
@@ -45,6 +45,7 @@ h1 {
     font-size: 1.333rem;
     line-height: 1.6rem;
     font-weight: bold;
+    letter-spacing: -1px;
 }
 
 .image-container {
@@ -62,7 +63,7 @@ h1 {
     line-height: 1.2rem;
 }
 
-/* TYPOGRAPHIC MEDIA QUERIES */
+/* TYPOGRAPHIC BREAKPOINTS */
 
 /* Group B */
 @media (min-width: 320px) {
@@ -124,5 +125,41 @@ h1 {
     .image-caption {
         font-size: 0.833rem;
         line-height: 1.111rem;
+    }
+}
+
+/* GRID BREAKPOINTS */
+
+/* Group 2 */
+@media (min-width: 400px) {
+    .container {
+        margin: 16px;
+    }
+}
+
+/* Group 3 */
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 2fr 1fr;
+        gap: 16px;
+        margin: 16px;
+    }
+}
+
+/* Group 4 */
+@media (min-width: 1008px) {
+    .container {
+        grid-template-columns: 2fr 2fr;
+        margin: 16px auto;
+        max-width: 976px;
+    }
+}
+
+/* Group 5 */
+@media (min-width: 1280px) {
+    .container {
+        grid-template-columns: 2fr 2fr;
+        margin: 16px auto;
+        max-width: 1248px;
     }
 }
