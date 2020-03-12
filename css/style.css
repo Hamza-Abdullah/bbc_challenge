@@ -41,8 +41,7 @@ img {
     margin: 8px;
 }
 
-h1,
-h2 {
+h1 {
     font-size: 1.333rem;
     line-height: 1.6rem;
     font-weight: bold;
@@ -54,11 +53,76 @@ h2 {
 
 .image-caption {
     position: absolute;
-    bottom: 8px;
+    bottom: 0px;
     padding: 8px;
     width: 100%;
     background-color: var(--dark-color);
     color: var(--light-color);
-    font-size: 0.933rem;
-    line-height: 1.067rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+/* TYPOGRAPHIC MEDIA QUERIES */
+
+/* Group B */
+@media (min-width: 320px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        line-height: 1.375rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    .image-caption {
+        font-size: 0.938rem;
+        line-height: 1.125rem;
+    }
+}
+
+/* Group D */
+@media (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        line-height: 1.375rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+
+    .image-caption {
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+    }
+}
+
+/* Group C */
+@media (min-width: 600px) and (any-hover: none) and (any-pointer: coarse) {
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        line-height: 1.333rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 2.222rem;
+    }
+
+    .image-caption {
+        font-size: 0.833rem;
+        line-height: 1.111rem;
+    }
 }
