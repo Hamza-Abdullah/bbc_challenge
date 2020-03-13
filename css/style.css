@@ -41,11 +41,6 @@ img {
     margin: 8px;
 }
 
-.container > * {
-    /* To help see grid */
-    /* background-color: greenyellow; */
-}
-
 .article-heading {
     grid-column: 1 / 13;
     font-size: 1.333rem;

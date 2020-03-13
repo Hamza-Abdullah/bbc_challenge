@@ -1,4 +1,15 @@
 var xhttp = new XMLHttpRequest();
+let next = document.getElementById("next");
+
+// if (articleNum < 5) {
+//     NEXT.addEventListener("click", nextArticle);
+// }
+
+// function nextArticle() {
+//     articleNum += 1;
+//     getNextArticle();
+//}
+
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         // Typical action to be performed when the document is ready:
@@ -112,5 +123,6 @@ xhttp.onreadystatechange = function() {
         }
     }
 };
-xhttp.open("GET", "../data/article-5.json", true);
+
+xhttp.open("GET", `../data/article-1.json`, true);
 xhttp.send();

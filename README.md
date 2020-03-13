@@ -1,6 +1,6 @@
 # BBC News Trainee, Web JS Coding Challenge: by Hamza Abdullah
 
-Repository for the coding challenge.
+Repository for the coding challenge. Created over the span of three days.
 
 ## UI Design (Layout and Styling)
 
@@ -28,3 +28,13 @@ Repository for the coding challenge.
     -   The reasoning here is that our eyes generally look at the top-left of a page first, before looking anywhere else.
 -   The navigation links are positioned at the end of the article.
     -   Prevents users from having to scroll back to the top
+
+## Functionality
+
+-   I make use of modern JavaScript features, such as let, const, and template literals.
+-   Unfortunately, I'm quite new to JavaScript, but chose it since I think it makes the most sense from a web application aspect, and considering the move to Node.js frameworks such as React, and is something I'm interested in.
+-   A HTTP GET request is made on load of the page for the first article.
+    -   The json file location has been hard coded into the request. This of course is not ideal and would have been made dynamic.
+-   An event listener should have been assigned to the "Next" link, and called a function to update the page with the subsequent article.
+-   After the final article had been viewed, the five rating links would have been repeated for each article title.
+    -   Clicking this link should have stored the rankings via a POST request.
