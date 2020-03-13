@@ -6,6 +6,7 @@ Repository for the coding challenge.
 
 -   Follows, as closely as possible and where applicable, the foundation design guidelines set out in the [BBC GEL](https://www.bbc.co.uk/gel/guidelines/category/foundations) Guidelines
 -   Designed with a mobile-first approach
+-   CSS uses scalable class names
 
 -   Responsiveness
 
